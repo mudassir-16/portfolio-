@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weekly Updates - Mohammed Mudassir</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    /* Reuse styles from skills.html */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #fff;
+      background: #000;
+    }
+    #vanta-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background: linear-gradient(45deg, #667eea, #764ba2);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      transition: all 0.3s;
+    }
+    .nav-links a:hover {
+      color: #667eea;
+      transform: translateY(-2px);
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #667eea;
+      transition: width 0.3s;
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .page-header {
+      padding: 150px 0 80px;
+      text-align: center;
+    }
+    .page-header h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, #667eea, #764ba2);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 50px rgba(102, 126, 234, 0.5);
+    }
+    .page-header p {
+      font-size: 1.5rem;
+      opacity: 0.9;
+    }
+
+    .update-section {
+      padding: 50px 0;
+    }
+    .update-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s;
+    }
+    .update-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+    }
+    .update-card h3 {
+      font-size: 1.8rem;
+      color: #667eea;
+      margin-bottom: 15px;
+    }
+    .update-card p {
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.8;
+    }
+    footer {
+      background: rgba(0, 0, 0, 0.9);
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .page-header h1 { font-size: 3rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- 3D Background -->
+  <div id="vanta-bg"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-container">
+      <div class="logo">Mohammed Mudassir</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="certification.html">Certifications</a></li>
+        <li><a href="weekly-updates.html">Weekly Updates</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Weekly Updates</h1>
+      <p>Documenting My Growth & Milestones</p>
+    </div>
+  </section>
+
+  <!-- Updates Section -->
+  <section class="update-section container">
+    <div class="update-card">
+      <h3>2025-07-29: HackerRank Python Programming</h3>
+      <p>Rank : xxxxxx</p>
+    </div>
+
+    <div class="update-card">
+      <h3>2025-07-29: Built Portfolio MVP</h3>
+      <p>I designed and deployed my 3D portfolio using HTML, CSS, and Vanta.js background. Integrated sections for skills, education, and contact forms.</p>
+    </div>
+
+    <!--<div class="update-card">
+      <h3>Week 3: Project - Password Manager in C</h3>
+      <p>Developed a terminal-based password manager with hashing using SHA-256 for secure storage. Worked with file handling and user authentication.</p>
+    </div>!
+
+    <!-- Add more weekly updates here -->!
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Mohammed Mudassir. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Vanta Background Script -->
+  <script>
+    VANTA.NET({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x667eea,
+      backgroundColor: 0x0,
+      points: 10.00,
+      maxDistance: 25.00,
+      spacing: 18.00
+    });
+  </script>
+</body>
+</html>
