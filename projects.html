@@ -156,11 +156,11 @@
 
         /* Project Grid (for future use) */
         .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            display: none; /* Hidden until projects are added */
-        }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    }
+
 
         .project-card-3d {
             background: rgba(255, 255, 255, 0.1);
@@ -290,39 +290,34 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="projects-section">
-        <div class="container">
-            <div class="coming-soon fade-in">
-                <i class="fas fa-rocket"></i>
-                <h2>🚀 Projects Coming Soon!</h2>
-                <p>I'm currently working on exciting projects including web applications, mobile apps, and open-source contributions. Check back soon to see my latest work and innovations!</p>
-            </div>
-            
-            <!-- Added new project snippet below -->
-            <div class="coming-soon fade-in">
-                <i class="fas fa-rocket"></i>
-                <h2>🚀 Projects Coming Soon!</h2>
-                <p>I'm currently working on exciting projects including web applications, mobile apps, and open-source contributions. Check back soon to see my latest work and innovations!</p>
-            </div>
-           
-            <div class="projects-grid">
-                <div class="project-card-3d">
-                    <div class="project-image">
-                        <i class="fas fa-laptop-code"></i>
+    <!-- Projects Section -->
+<section class="projects-section">
+    <div class="container">
+       
+       
+        <div class="projects-grid">
+            <!-- Project 1: PhotoBooth Studio -->
+            <div class="project-card-3d fade-in">
+                <div class="project-image">
+                    <i class="fas fa-camera-retro"></i>
+                </div>
+                <div class="project-content">
+                    <h3>PhotoBooth Studio: Interactive Retro Photo Experience</h3>
+                    <p>A modern web-based photo booth with countdowns, camera effects, 10+ filters, and retro-style photo strip downloads. Built with React, Vite, and Framer Motion.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Vite</span>
+                        <span class="project-tag">Framer Motion</span>
+                        <span class="project-tag">HTML2Canvas</span>
+                        <span class="project-tag">Webcam</span>
+                        <a href="https://sweet-gaufre-775ec9.netlify.app/" target="_blank">View Project →</a>
+                        <a href="https://github.com/mudassir-16/photoboothstudio.git" target="_blank">View Repository →</a>
                     </div>
-                    <div class="project-content">
-                        <h3>SMART CART: Revolutionizing E-commerce with AI - Based Cart Management</h3>
-                        <p></p>
-                        <div class="project-tags">
-                            <span class="project-tag">HTML</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">JavaScript</span>
-                        </div>
-                    </div>  
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer>
